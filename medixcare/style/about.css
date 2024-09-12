@@ -1,0 +1,252 @@
+/*dry standards common to every page */
+:root {
+  --primary-color: #008080;
+  --secondary-color: #6c757d;
+  --accent-color: #005f5f;
+  --hover-color: #00a0a0;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --font-color: #000000;
+  --heading-color: #333333;
+  --margin: 10px;
+  --padding: 15px;
+  --border-radius: 10px;
+  --transition-speed: 0.3s;
+  --nav-margin: 20px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --font-family: "Poppins", sans-serif;
+}
+/*abous us flex boxes*/
+.aboutus {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: var(--margin);
+  padding: var(--margin);
+  flex-wrap: wrap;
+}
+
+.aboutbox {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed), height 1s ease 0s;
+  width: 30%;
+  height: var(--height-collapsed);
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  height: 50px;
+  transition: height 1s ease 0s;
+}
+
+.aboutbox:hover {
+  transform: scale(1.05);
+  height: var(--height-expanded);
+  background-color: var(--hover-color);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  height: 300px;
+}
+
+.aboutbox h3 {
+  color: var(--background-color);
+  margin-top: 0;
+}
+
+p {
+  color: var(--background-color);
+  margin: 0;
+  transition: opacity var(--transition-speed);
+}
+
+.aboutbox:hover p {
+  opacity: 1;
+}
+
+/* Team Section */
+.team-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: var(--padding);
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
+.team-member {
+  text-align: center;
+  margin: var(--margin);
+  color: var(--font-color);
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.team-member img {
+  width: 400px;
+  height: 400px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed) ease-in-out;
+}
+
+.team-member:hover img {
+  transform: scale(1.05);
+}
+
+.team-member h3 {
+  color: var(--primary-color);
+  margin: 20px 0 5px;
+}
+
+/* View More Link Styling */
+.view-more {
+  text-align: center;
+  margin-top: var(--margin);
+}
+
+.view-more a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color var(--transition-speed) ease-in-out;
+}
+
+.view-more a:hover {
+  color: var(--font-color);
+}
+
+/* Table Container */
+.table-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin: 20px;
+  box-shadow: var(--box-shadow);
+  color: var(--font-color);
+}
+
+.table-row {
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding);
+  background-color: var(--background-color);
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: var(--font-color);
+}
+
+.header {
+  background-color: #e8f4f8;
+  font-weight: bold;
+  color: var(--heading-color);
+}
+
+.table-cell {
+  flex: 1;
+  padding: var(--padding);
+  text-align: left;
+  word-wrap: break-word;
+}
+
+.table-cell:nth-child(1) {
+  flex: 1.5; /* Adjusting width for the first column */
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+/* Branch Section */
+.branch {
+  margin-bottom: 40px;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  color: var(--font-color);
+}
+
+.branch-info {
+  padding: var(--padding);
+  margin-bottom: 20px;
+}
+
+.branch-layout {
+  display: flex;
+  flex-direction: column; /* Stacked by default for mobile */
+}
+
+.branch-map iframe {
+  width: 400px;
+  height: 600px;
+  border: 0;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .branch-layout {
+    flex-direction: row; /* Side by side on larger screens */
+    gap: 20px;
+  }
+
+  .branch-map iframe {
+    width: 50%; /* Map takes half the width */
+    height: 400px;
+  }
+
+  .gallery {
+    width: 50%; /* Gallery takes the other half */
+  }
+
+  .gallery img {
+    width: 48%; /* Two images per row */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/*MOBILE STYLES*/
+/* Mobile View branch flex boxes */
+@media (max-width: 768px) {
+  .branch {
+    flex-direction: column;
+  }
+}
+/* Media query for responsiveness for about us*/
+@media (max-width: 768px) {
+  .aboutus {
+    flex-direction: column;
+  }
+
+  .aboutbox {
+    width: 100%; /* Boxes will stack in a single column on small screens */
+  }
+}
+/*Mobile styles for table*/
+@media (max-width: 768px) {
+  .table-row {
+    flex-direction: column;
+    padding: var(--padding) 5px;
+  }
+
+  .table-cell {
+    padding: 5px;
+    text-align: left;
+  }
+}

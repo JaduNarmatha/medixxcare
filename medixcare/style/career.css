@@ -1,0 +1,51 @@
+:root {
+  --primary-color: #008080; /* Teal */
+  --secondary-color: #6c757d; /* Gray */
+  --accent-color: #005f5f; /* Light Gray */
+  --hover-color: #00a0a0; /* Lighter Teal for hover */
+  --text-color: #333; /* Dark text color */
+  --background-color: #ffffff;
+  --font-color: #000000;
+  --heading-color: #333333;
+  --margin: 10px;
+  --padding: 15px;
+  --border-radius: 10px;
+  --transition-speed: 0.3s;
+  --nav-margin: 20px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  text-align: center;
+  padding: var(--padding);
+  box-shadow: var(--box-shadow);
+}
+
+/* Container */
+.contai {
+  width: 80%;
+  margin: var(--margin) auto;
+  padding: var(--padding);
+  background-color: var(--background-color);
+}
+
+.content {
+  margin-bottom: var(--margin);
+}
+
+.job-listing {
+  margin-bottom: var(--margin);
+  padding: var(--padding);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: var(--background-color);
+  transition: transform var(--transition-speed);
+}
+
+.job-listing:hover {
+  transform: translateY(-5px);
+}

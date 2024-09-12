@@ -1,0 +1,145 @@
+:root {
+  --primary-color: #008080; /* Teal */
+  --secondary-color: #6c757d; /* Gray */
+  --accent-color: #005f5f; /* Light Gray */
+  --hover-color: #00a0a0; /* Lighter Teal for hover */
+  --text-color: #333; /* Dark text color */
+  --background-color: #ffffff; /* White */
+  --font-color: #000000;
+  --heading-color: #333333;
+  --margin: 10px;
+  --padding: 15px;
+  --border-radius: 10px;
+  --transition-speed: 0.3s;
+  --nav-margin: 20px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --font-family: "Poppins", sans-serif;
+}
+
+.top-specialists {
+  padding: 40px var(--padding);
+  background-color: var(--accent-color);
+}
+
+.top-specialists h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: var(--heading-color);
+  text-align: center;
+}
+
+.specialist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--margin);
+  justify-content: space-between;
+}
+
+.specialist-item {
+  flex: 1 1 22%;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  transition: transform var(--transition-speed) ease;
+}
+
+.specialist-item img {
+  width: 500px;
+  height: 400px;
+  margin-bottom: 15px;
+}
+
+.specialist-item:hover {
+  transform: translateY(-5px);
+}
+
+.see-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.see-more span {
+  font-size: 30px;
+  color: var(--heading-color);
+}
+
+.see-more p {
+  font-size: 16px;
+  color: var(--heading-color);
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .specialist-item {
+    flex: 1 1 48%;
+  }
+}
+
+@media (max-width: 480px) {
+  .specialist-item {
+    flex: 1 1 100%;
+  }
+}
+
+.form {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.form {
+  background: var(--background-color);
+  padding: 10px 0;
+  text-align: center;
+}
+
+.form-containe {
+  background: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin) 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+
+.form-containe h2 {
+  margin-bottom: 20px;
+  color: var(--primary-color);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  color: var(--text-color);
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: var(--padding);
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.form-group input[type="submit"] {
+  background: var(--primary-color);
+  color: var(--background-color);
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.form-group input[type="submit"]:hover {
+  background: var(--hover-color);
+}

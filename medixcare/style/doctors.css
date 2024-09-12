@@ -1,0 +1,241 @@
+:root {
+  --primary-color: #008080; /* Teal */
+  --secondary-color: #6c757d; /* Gray */
+  --accent-color: #005f5f; /* Light Gray */
+  --hover-color: #00a0a0; /* Lighter Teal for hover */
+  --text-color: #333; /* Dark text color */
+  --background-color: #ffffff; /* White */
+  --font-color: #000000;
+  --heading-color: #333333;
+  --margin: 10px;
+  --padding: 15px;
+  --border-radius: 10px;
+  --transition-speed: 0.3s;
+  --nav-margin: 20px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --font-family: "Poppins", sans-serif;
+  --image-border-radius: 60%;
+  --image-border-size: 5px;
+  --image-width: 250px;
+  --image-height: 300px;
+}
+
+/* Doctor Description Section */
+.doctors-description {
+  background-color: var(--background-color);
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: -3px 4px 49px 7px #000000;
+}
+
+.doctors-description h2 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.doctors-description p {
+  font-size: 18px;
+  line-height: 1.6;
+  column-count: 2;
+}
+
+/* Doctor Cards Section */
+.doctors-section {
+  display: flex;
+  background-color: var(--background-color);
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: var(--padding);
+  row-gap: 80px;
+  margin: 80px;
+}
+
+.doctor-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+    0deg,
+    #008080 0%,
+    #6c757d 0%,
+    #005f5f 28%,
+    #00a0a0 77%
+  );
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin: var(--margin);
+  max-width: 300px;
+  text-align: center;
+}
+
+.doctor-image img {
+  border-radius: var(--image-border-radius);
+  border: var(--image-border-size) solid var(--primary-color);
+  width: var(--image-width);
+  height: var(--image-height);
+  object-fit: cover;
+  margin-top: -75px;
+  box-shadow: var(--box-shadow);
+}
+.doctor-image:hover {
+  transform: translateY(-5px);
+  transition: var(--transition-speed);
+}
+
+.doctor-info {
+  padding: var(--padding);
+}
+
+.doctor-qualifications {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.doctor-info h2 {
+  color: var(--font-color);
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.doctor-info p {
+  color: var(--font-color);
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.doctor-specialties {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  color: var(--font-color);
+}
+
+.doctor-specialties li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.doctor-specialties li:before {
+  content: "•";
+  font-family: FontAwesome;
+  color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.doctor-socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.doctor-socials a {
+  text-decoration: none;
+  color: var(--font-color);
+}
+
+/* Appointment Section */
+.cont-appointment {
+  background-color: var(--background-color);
+  padding: 60px 0;
+  opacity: 0.89;
+  box-shadow: -3px 4px 49px 7px #000000;
+}
+
+.appoint {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cont-box,
+.appoint-box {
+  background: linear-gradient(0.25turn, #005f5f, #008080, #6c757d);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+}
+
+.cont-box .contact-content,
+.appoint-box .appoint-content {
+  max-width: 50%;
+  z-index: 1;
+}
+
+.cont-box img,
+.appoint-box img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 800px;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid var(--background-color);
+  color: var(--background-color);
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color var(--transition-speed);
+}
+
+.button:hover {
+  background-color: var(--background-color);
+  color: #3ea6f7;
+}
+/*MOBILE STYLE*/
+/* Mobile Responsiveness for Appointment Section */
+@media (max-width: 768px) {
+  .appoint {
+    grid-template-columns: 1fr;
+  }
+
+  .cont-box img,
+  .appoint-box img {
+    width: 400px;
+    height: 400px;
+  }
+
+  .button {
+    padding: 8px 16px;
+  }
+}
+/*mobile for doctor description*/
+@media (max-width: 768px) {
+  /* For tablets and mobile devices */
+  .doctors-description p {
+    font-size: 16px; /* Adjust font size for smaller screens */
+    column-count: 1; /* Single column for better readability on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  /* For very small screens, like mobile phones */
+  .doctors-description p {
+    font-size: 14px; /* Further adjust font size if needed */
+    column-count: 1; /* Ensure single column for small screens */
+  }
+}
+/* Mobile  for Doctor Cards */
+@media (max-width: 768px) {
+  .doctors-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .doctor-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}

@@ -1,0 +1,73 @@
+:root {
+  --primary-color: #008080; /* Teal */
+  --secondary-color: #6c757d; /* Gray */
+  --accent-color: #005f5f; /* Light Gray */
+  --hover-color: #00a0a0; /* Lighter Teal for hover */
+  --text-color: #333; /* Dark text color */
+  --background-color: #ffffff; /* White */
+  --font-color: #000000;
+  --heading-color: #333333;
+  --margin: 10px;
+  --padding: 15px;
+  --border-radius: 10px;
+  --transition-speed: 0.3s;
+  --nav-margin: 20px;
+  --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  --font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.header {
+  background: var(--accent-color);
+  color: var(--background-color);
+  padding: var(--padding) 0;
+  text-align: center;
+}
+
+.contact-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-info ul li {
+  margin-bottom: var(--margin);
+  color: var(--text-color);
+}
+
+.map {
+  margin: var(--margin) 0;
+}
+.section {
+  background: var(--background-color);
+  padding: var(--padding);
+  margin: var(--margin) 0;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+}
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: var(--padding);
+  margin: var(--margin) 0;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius);
+}
+
+.feedback-form button {
+  background: var(--accent-color);
+  color: var(--background-color);
+  padding: var(--padding) 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: var(--transition-speed);
+}
+
+.feedback-form button:hover {
+  background: var(--hover-color);
+}

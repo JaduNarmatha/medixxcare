@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Website</title>
+    <!-- favicon generator link added-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
+    <link rel="manifest" href="./site.webmanifest" />
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#111010" />
+    <meta name="msapplication-TileColor" content="#00aba9" />
+    <meta name="theme-color" content="#ffffff" />
+    <!--google fonts added-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,500;0,600;0,700;0,800;0,900;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <!--stylesheets-->
+    <link rel="stylesheet" href="./style/reset.css" />
+    <link rel="stylesheet" href="./style/sevice.css" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css"/>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-brands/css/uicons-brands.css'>
+  </head>
+  <!-- Top Header -->
+  <header class="top-header">
+    <div class="contact-info">
+      <span>📞 0123456789</span>
+      <span>📍 Kandy, Sri Lanka</span>
+      <span>✉ medixcare@gmail.com</span>
+    </div>
+    <div class="social-icons">
+      <a href="#"><i class="fi fi-brands-instagram"></i></a>
+      <a href="#"><i class="fi fi-brands-twitter-alt"></i></a>
+      <a href="#"><i class="fi fi-brands-twitter"></i></a>
+      <a href="#"><i class="fi fi-brands-linkedin"></i></a>
+    </div>
+  </header>
+  <main>
+    <!-- Main Navigation , styles in main.css -->
+    <nav class="main-nav">
+      <div class="logo">
+        <a href="./index.html"
+          ><img src="./img/logo.jpg" alt="Hospital Logo"
+        /></a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+     
+      <label for="menu-toggle" class="menu-icon">☰ Menu</label>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="./index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="./about.html" class="nav-link ">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="./services.html" class="nav-link active">Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="./contactus.html" class="nav-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a href="./Doctors.html" class="nav-link ">Doctors</a>
+        </li>
+        <li class="nav-item">
+          <a href="./Reservstions.html" class="nav-link"
+            >Consulting Reservation</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="./pharmacy.html" class="nav-link">Pharmacy</a>
+        </li>
+        <li class="nav-item">
+          <a href="./careers.html" class="nav-link">Careers</a>
+        </li>
+      </ul>
+      <a href="./Reservstions.html" class="appointment-button">APPOINTMENT</a>
+    </nav>
+    <section class="hero-section">
+      <div class="overlay-hero">
+        <h1>SERVICES</h1>
+        <a href="./index.html">Home</a> • <a href="./services.html">Services</a>
+      </div>
+    </section>
+  </main>
+  <body>
+   
+    <!-- Services Section -->
+    <section class="services-intro">
+        <h1>Medix Care Services</h1>
+        <p>Our hospital is dedicated to providing exceptional healthcare services across a wide spectrum of medical specialties. With state-of-the-art technology and a team of highly skilled professionals, we offer services ranging from preventive care to advanced medical treatments.</p>
+        <p>Our primary services include general medicine, specialized surgeries, and outpatient care. We have dedicated departments for cardiology, orthopedics, neurology, pediatrics, and oncology, ensuring that patients receive specialized attention. In addition, our maternity care services offer comprehensive support for expecting mothers, from prenatal care to postnatal recovery. Our 24/7 emergency unit is equipped with the latest medical technology to handle critical cases efficiently.</p>
+        <p>For patients with chronic illnesses, we offer personalized treatment plans that include physical therapy, rehabilitation, and long-term care options. Our diagnostic services are equipped with advanced imaging and laboratory facilities, ensuring quick and accurate results.</p>
+        <p>We also provide wellness programs focusing on preventive care, nutrition, and fitness, helping individuals maintain optimal health. With VIP services available, our hospital ensures a comfortable and private environment for those who require specialized attention.</p>
+    </section>
+
+    <section class="services-section">
+        <div class="container">
+            <aside class="services-list">
+                <h2>All Services</h2>
+                <ul>
+                    <!-- Emergency and Critical Care Services -->
+                    <li>
+                        <input type="checkbox" id="emergency-care">
+                        <label for="emergency-care">Emergency and Critical Care Services</label>
+                        <ul>
+                            <li>24-Hour Accident & Emergency</li>
+                            <li>Ambulance Service</li>
+                            <li>Neonatal Intensive Care Unit (NICU)</li>
+                            <li>Intensive Care Unit (ICU)</li>
+                            <li>Emergency Surgery</li>
+                        </ul>
+                    </li>
+                
+                    <!-- Diagnostic and Imaging Services -->
+                    <li>
+                        <input type="checkbox" id="diagnostic-imaging">
+                        <label for="diagnostic-imaging">Diagnostic and Imaging Services</label>
+                        <ul>
+                            <li>Radiology (CT, MRI, Ultrasound, X-Ray)</li>
+                            <li>Electrocardiogram (ECG)</li>
+                            <li>Laboratory Services</li>
+                            <li>Blood Transfusion</li>
+                            <li>Mammography</li>
+                            <li>EMG, EEG (Neuro Investigations)</li>
+                        </ul>
+                    </li>
+                
+                    <!-- Surgical Services -->
+                    <li>
+                        <input type="checkbox" id="surgical-services">
+                        <label for="surgical-services">Surgical Services</label>
+                        <ul>
+                            <li>General Surgery</li>
+                            <li>Cardiac Care and Surgery</li>
+                            <li>Orthopaedic Surgery</li>
+                            <li>Neurology & Neurosurgery</li>
+                            <li>Gynaecological Surgery</li>
+                            <li>Plastic & Reconstructive Surgery</li>
+                            <li>Vascular & Transplant Surgery</li>
+                            <li>Endoscopy, Colonoscopy, Bronchoscopy, Gastroscopy</li>
+                        </ul>
+                    </li>
+                
+                    <!-- Specialist Care Services -->
+                    <li>
+                        <input type="checkbox" id="specialist-care">
+                        <label for="specialist-care">Specialist Care Services</label>
+                        <ul>
+                            <li>Cancer Care & Chemotherapy</li>
+                            <li>Diabetes Centre</li>
+                            <li>Cardiac Investigations (ECG, ECHO, Exercise ECG)</li>
+                            <li>Respiratory Disease Care & Sleep Apnoea Test</li>
+                            <li>Kidney Transplant Centre</li>
+                            <li>Neurology & Neuro Surgery</li>
+                            <li>ENT (Ear, Nose, and Throat) Care</li>
+                            <li>Urology</li>
+                        </ul>
+                    </li>
+                
+                    <!-- Outpatient and Preventive Care Services -->
+                    <li>
+                        <input type="checkbox" id="outpatient-care">
+                        <label for="outpatient-care">Outpatient and Preventive Care Services</label>
+                        <ul>
+                            <li>Outpatient (OPD) Care</li>
+                            <li>Health Screening</li>
+                            <li>Doctor Channeling</li>
+                            <li>Community Wellness Programmes & Free Clinics</li>
+                            <li>Corporate Wellness</li>
+                            <li>International Patient Care</li>
+                            <li>Vaccination Centre</li>
+                            <li>Specialist Consultation</li>
+                        </ul>
+                    </li>
+                
+                    <!-- Rehabilitation and Therapy Services -->
+                    <li>
+                        <input type="checkbox" id="rehab-therapy">
+                        <label for="rehab-therapy">Rehabilitation and Therapy Services</label>
+                        <ul>
+                            <li>Physiotherapy & Rehabilitation</li>
+                            <li>Speech Therapy</li>
+                            <li>Sports Medicine</li>
+                            <li>Dietetic & Nutritional Support</li>
+                            <li>Diabetes Education</li>
+                            <li>Lactation & Breastfeeding Counseling</li>
+                        </ul>
+                    </li>
+                
+                    <!-- Mother and Child Care Services -->
+                    <li>
+                        <input type="checkbox" id="mother-child-care">
+                        <label for="mother-child-care">Mother and Child Care Services</label>
+                        <ul>
+                            <li>Mother & Baby Care</li>
+                            <li>Gynaecological Surgery</li>
+                            <li>Paediatric Care</li>
+                            <li>Neonatal Intensive Care Unit (NICU)</li>
+                            <li>Lactation & Breastfeeding Counseling</li>
+                            <li>Immunizations for Children</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </aside>
+            <section class="service-grid">
+                <div class="service-box">
+                    <img src="./img/36.png" alt="Heart Centres">
+                    <h3>Heart Centres</h3>
+                </div>
+                <div class="service-box">
+                    <img src="./img/37.png" alt="Bone Marrow Transplant">
+                    <h3>Bone Marrow Transplant</h3>
+                </div>
+                <div class="service-box">
+                    <img src="./img/29.png" alt="Brain & Spine">
+                    <h3>Brain & Spine</h3>
+                </div>
+                <div class="service-box">
+                    <img src="./img/38.png" alt="Interventional Radiology">
+                    <h3>Interventional Radiology</h3>
+                </div>
+                <div class="service-box">
+                    <img src="./img/35.png" alt="Kidney Transplant Centre">
+                    <h3>Kidney Transplant Centre</h3>
+                </div>
+                <div class="service-box">
+                    <img src="./img/39.png" alt="Cancer Centre">
+                    <h3>Cancer Centre</h3>
+                </div>
+                <div class="service-box">
+                    <img src="./img/40.png" alt="Urology Services">
+                    <h3>Urology Services</h3>
+                </div>
+                <div class="service-box">
+                    <img src="./img/41.png" alt="Stroke Centre">
+                    <h3>Stroke Centre</h3>
+                </div>
+            </section>
+        
+        </div>
+    </section>
+    <div class="services-appointment-container">
+    <section class="online-services">
+      <h2>Use the convenience of our online services here</h2>
+      <div class="services-grid">
+          <div class="service-card">
+              <h3>DOWNLOAD LAB REPORTS</h3>
+              <p>Access your laboratory test results here with ease.</p>
+          </div>
+          <div class="service-card">
+              <h3>CONSULTATION BOOKINGS</h3>
+              <p>Make your consultant channelling appointment here.</p>
+          </div>
+          <div class="service-card">
+              <h3>ONGOING NUMBER</h3>
+              <p>Monitor the ongoing number for your consultant to schedule your arrival at the hospital.</p>
+          </div>
+          <div class="service-card">
+              <h3>PRE-REGISTRATION</h3>
+              <p>Save time by completing your registration here before your visit.</p>
+          </div>
+          <div class="service-card">
+              <h3>ONLINE PHARMACY</h3>
+              <p>Order your prescription medication and have them delivered to your doorstep.</p>
+          </div>     
+          <div class="service-card">
+              <h3>PATIENT FEEDBACK</h3>
+              <p>Please share your experience with us to help ensure it’s a good one always.</p>
+          </div>
+      </div>
+  </section>
+
+    <!-- Appointment Section -->
+    <section class="section feedback-form">
+      <h2>Get an Appointment</h2>
+      <form action="/submit-feedback" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>         
+          <label for="date">Date:</label>
+          <input type="date" id="date" name="date" required></input>
+          <label for="service">Service:</label>
+          <select name="service" id="service">
+            <option value="OPD">OPD</option>
+            <option value="Diagnostic-and-Imaging-Services">Diagnostic and Imaging Services</option>
+            <option value="Mother-and-ChildCare-Services">Mother and Child Care Services</option>
+            <option value="specialist-care">Specialist Care Services</option>
+            <option value="Surgical-Services">Surgical Services</option>
+        </select>
+        <label for="appointmentTime">Time of Appointment:</label>
+          <input type="time" id="appointmentTime" name="appointmentTime" required>
+                
+          <a href="./Reservstions.html"><button type="submit">BOOK APPOINTMENT</button></a>
+      </form>
+  </section>
+
+  </div>
+    <section class="insurance">
+      <div class="insurance-image">
+          <img src="./img/2.jpg" alt="insurance image">
+      </div>
+      <div class="insurance-text">
+          <h1>Our Insurance</h1>
+          <p>Our hospital partners with various insurance providers to offer seamless healthcare services. We simplify the process of verifying coverage and handling claims, ensuring patients receive the care they need without financial stress. Our dedicated insurance team assists with pre-authorization, billing, and coordination between the hospital and insurers. Whether for routine check-ups or specialized treatments, we ensure your insurance benefits are maximized for smooth and stress-free care.</p>
+      </div>
+  </section>
+  <section>
+    <div class="contacts-container">
+      <div class="contacts">
+        <div>
+          <h3>Address</h3>
+          <p>2/23 Kandy road, Srilanka</p>
+        </div>
+      </div>
+      <div class="contacts">
+        <div>
+          <h3>Hotline</h3>
+          <p>012-345-6789</p>
+        </div>
+      </div>
+      <div class="contacts">
+        <div>
+          <a href="./Reservstions.html"><h3>Appointments</h3>
+          <a href="./Reservstions.html"><p>Reserve your Doctor</p></a>
+        </a>
+          </div>
+      </div>
+    </div>
+  </section>
+    <section class="quality-data-section">
+        <h3>Our Quality Data</h3>
+        <div class="quality-data-container">
+
+            <div class="quality-item">
+                <h2>94.82%</h2>
+                <p>Patient Satisfaction Rate on Services</p>
+            </div>
+
+            <div class="quality-item">
+                <h2>97.30%</h2>
+                <p>Compliance to Correct Patient Identification</p>
+            </div>
+
+            <div class="quality-item">
+                <h2>88.33%</h2>
+                <p>Hand Hygiene Compliance</p>
+            </div>
+
+            <div class="quality-item">
+                <h2>0.09%</h2>
+                <p>Rate of Hospital Acquired Infections</p>
+            </div>
+            <div class="quality-item">
+                <h2>0.00%</h2>
+                <p>Rate of Hospital Acquired Bed Sores</p>
+            </div>
+
+            <div class="quality-item">
+                <h2>0.00%</h2>
+                <p>Rate of Patient Falls</p>
+            </div>
+
+        </div>
+    </section>
+  
+</body>
+<footer>
+  <div class="container">
+      <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="./index.html">Home Page</a></li>
+              <li><a href="./about.html">About Us Page</a></li>
+              <li><a href="./services.html">Services Page </a></li>
+              <li><a href="./Doctors.HTML">Doctors Page</a></li>
+              <li><a href="./contactus.html">Contact Us</a></li>
+              <li><a href="./pharmacy.html">Pharmacy Page</a></li>
+              <li><a href="./Reservstions.html">Consulting Reservation Page</a></li>
+              <li><a href="./careers.html">Careers</a></li>
+          </ul>
+      </div>
+      <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>2/23 Kandy road, Srilanka</p>
+          <p>medixcare@yahoo.com</p>
+          <p>012-3568974</p>
+      </div>
+      <div class="footer-section">
+          <h3>Subcribe Us</h3>
+          <p>Please Subcribe us for More inquiries and Notifications</p>
+          <form>
+              <input type="email" placeholder="Your Email Address" required>
+              <button type="submit">Subscribe</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy;2024 All rights reserved| <span>♥</span> by Medixcare</p>
+      <div class="footer-social-icons">
+          <a><i class="fi fi-brands-facebook"></i></a>
+          <a><i class="fi fi-brands-instagram"></i></a>
+          <a><i class="fi fi-brands-twitter-alt"></i></a>
+          <a><i class="fi fi-brands-twitter"></i></a>
+          <a><i class="fi fi-brands-linkedin"></i></a>
+      </div>
+  </div>
+</footer>
+</html>
